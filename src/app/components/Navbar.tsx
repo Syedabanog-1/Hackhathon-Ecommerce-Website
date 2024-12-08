@@ -31,7 +31,7 @@ const Navbar = () => {
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-blue-600 transition-all duration-300 hover:w-full"></span>
             </Link>
             <Link className="navbar_link relative hover:text-blue-600 transition duration-300" href="/login">
-              LoginRegister
+              Login/Register
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-blue-600 transition-all duration-300 hover:w-full"></span>
             </Link>
           </div>
