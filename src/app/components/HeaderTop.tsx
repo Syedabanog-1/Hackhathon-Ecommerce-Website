@@ -22,7 +22,7 @@ const HeaderTop = () => {
           
           {/* Promo Text */}
           <div className="text-gray-500 text-[12px] mx-auto">
-            <b className="text-gray-700">Discount SHIPPING</b> THIS WEEK ON ORDERS OVER <span className="text-blue-500">$50</span>
+            <b className="text-gray-700">Free SHIPPING</b> THIS WEEK ON ORDERS OVER <span className="text-blue-500">$50</span>
 
           </div>
           
