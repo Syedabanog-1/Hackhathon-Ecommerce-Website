@@ -39,7 +39,7 @@ const productData = [
   },
   {
     key: 5,
-    img: "/Orange chair.png",
+    img: "/orange chair.png",
     title: "Chair Bright Orange",
     desc: "Chair color looks very pretty",
     rating: 4.9,
