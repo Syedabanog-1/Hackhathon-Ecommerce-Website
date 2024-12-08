@@ -11,15 +11,18 @@ const HeaderMin = () => {
       <div className="container sm:flex justify-between items-center">
         {/* Logo Section */}
         <div className="font-bold text-4xl text-center pb-5 sm:pb-0 text-blackish">
-          <Image className="rounded-xl object-cover w-1/2 max-h-[700px] sm:max-h-[500px] md:max-h-[400px] lg:max-h-[500px] object-center transition-transform duration-300 ease-in-out"
- 
-            src="/logo.png" // Update this with your image path in the public folder
-            alt="Logo"
-            width={150} // Adjust to your logo size
-            height={50} // Adjust to your logo size
-            priority // Ensures the logo loads quickly
-            />
-        </div>
+  <div className="flex items-center justify-center space-x-2">
+    <Image
+      className="rounded-xl object-cover w-1/2 max-h-[700px] sm:max-h-[500px] md:max-h-[400px] lg:max-h-[500px] object-center transition-transform duration-300 ease-in-out"
+      src="/logo.png" // Update this with your image path in the public folder
+      alt="Logo"
+      width={150} // Adjust to your logo size
+      height={50} // Adjust to your logo size
+      priority // Ensures the logo loads quickly
+    />
+    <span className="text-2xl font-semibold text-gray-700">Comforty</span>
+  </div>
+</div>
 
         {/* Search Bar Section */}
         <div className="relative w-full sm:w-[300px] md:w-[70%]">
