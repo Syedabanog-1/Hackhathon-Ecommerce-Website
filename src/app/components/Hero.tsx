@@ -53,7 +53,7 @@ const Hero = () => {
           
         ))}
       </Slider>
-      <button className="bg-red-300 text-white mt-4 py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-200">
+      <button className="bg-red-400 text-white mt-4 py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-200">
               Shop Now 
             </button>
     </div>

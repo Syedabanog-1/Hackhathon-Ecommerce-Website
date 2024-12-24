@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Hero_Pic from  './Hero_Pic';
 
 
 
@@ -37,7 +38,8 @@ const Slide: React.FC<propsTypes> = ({ title, mainTitle, price }) => {
         height={1000} 
         priority />
     </div>
-  
+      
+       
   );
 };
 

@@ -40,6 +40,13 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+  .mobile-menu {
+    @apply bg-white shadow-md p-4;
+  }
+  
+  .desktop-menu {
+    @apply bg-white shadow-md p-4;
+  }
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
