@@ -21,7 +21,7 @@ const Hero_pic = () => {
             </h1>
           </div>
           <div className="mt-5">
-          <Button className="bg-secondary.rounded-[6px] text-yellow-500">Shop Now <FaArrowRightLong /></Button>
+          <Button className="bg-secondary.rounded-[6px] text-pink-700">Shop Now <FaArrowRightLong /></Button>
           </div>
       <div className="p-4">
         <Image

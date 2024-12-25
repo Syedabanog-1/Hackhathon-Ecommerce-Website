@@ -63,6 +63,7 @@ const Hero = () => {
           
         ))}
       </Slider>
+      
           </div>
   );
 };
