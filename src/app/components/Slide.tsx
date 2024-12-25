@@ -1,6 +1,7 @@
+
 import React from "react";
-import Image from "next/image";
-import Hero_Pic from  './Hero_Pic';
+//import Image from "next/image";
+import Hero_pic from  './Hero_Pic';
 
 
 
@@ -23,12 +24,10 @@ const Slide: React.FC<propsTypes> = ({ title, mainTitle, price }) => {
         <h3 className="text-[20px] text-gray-500">
           Starting at <b className="text-[22px] md:text-[26px] lg:text-[30px]">{price}</b>.00
         </h3>
-        <div className="bg-red text-white text-[14px] md:text-[16px] p-2 px-4 rounded-lg inline-block cursor-pointer hover:bg-black">
-          Shop Now
-        </div>
+        
       </div>
        
-      {/* Image Section */}
+      {/* Image Section 
       <Image className="rounded-xl object-cover w-1/2 max-h-[700px] sm:max-h-[500px] md:max-h-[400px] lg:max-h-[500px] object-center transition-transform duration-300 ease-in-out"
 
         src="/white chair.png" // Use the img prop passed down
@@ -36,11 +35,14 @@ const Slide: React.FC<propsTypes> = ({ title, mainTitle, price }) => {
         layout="responsive" 
         width={2000} 
         height={1000} 
-        priority />
+        priority /> */}
+        <div className="w-[1150px] lg:w[1321px] h-[800px]">
+        <Hero_pic />
+        </div>
     </div>
       
        
   );
 };
-
 export default Slide;
+

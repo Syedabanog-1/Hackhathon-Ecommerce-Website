@@ -15,25 +15,26 @@ const Hero_pic = () => {
       <div className="w-[1150px] lg:w[1321px] h-[800px] bg-back flex rounded-bl-[50px]  md:items-center justify-between flex-col md:flex-row">
         <div className="h-80 md:w-[500px] p-4">
           <div className="text-center md:text-start text-xs md:text-base">Welcome to chairy</div>
-          <div className="md:text-[60px] text-[36px] text-center md:text-start">
+          <div className="md:text-[60px] text-[36px] text-center md:text-start" />
             <h1 className={inter.className}>
               Best Furniture Collection for your interior.
             </h1>
           </div>
-          <div className="flex justify-center md:justify-start mt-5">
-          <Button className="bg-secondary. rounded-[6px]">Shop Now <FaArrowRightLong /></Button>
+          <div className="mt-5">
+          <Button className="bg-secondary.rounded-[6px] text-yellow-500">Shop Now <FaArrowRightLong /></Button>
           </div>
-        </div>
-        <div className="p-4">
+      <div className="p-4">
         <Image
-          src="/chair1.jpg"
+          src="/black-chair.png"
           alt="pretty"
           width={434}
           height={584}
         />
+        
+       </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 

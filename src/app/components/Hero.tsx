@@ -17,26 +17,36 @@ const Hero = () => {
 
   const sliderData = [
     {
+      
       id: 0,
-      img: "/pexels-photo.jpeg",
-      title: "Trending Item",
-      mainTitle: "Moveable Chair",
-      price: "$15",
+      img: "/desk chair.png",
+      title: "Trending Accessories",
+      mainTitle: "Wings Chair",
+      price: "$30",
     },
     {
       id: 1,
-      img: "/pexels-photo-627901.webp",
-      title: "Trending Accessories",
-      mainTitle: "Wings Chair",
-      price: "$20",
-    },
-    {
-      id: 2,
-      img: "/pexels-photo-4464815.webp",
-      title: "Welcome To Chairy",
-      mainTitle: "Best Furniture Collection For Your Interior",
-      price: "$30",
-    },
+      img: "/table chair.png",
+      title: "Trending Item",
+      mainTitle: "Moveable Chair",
+      price: "$40",
+      },
+      {
+        id: 2,
+        img: "/orange chair.png",
+        title: "Trending Item",
+        mainTitle: "Comfort Chair",
+        price: "$20",
+        
+      },
+      {
+        id: 3,
+        img: "/plain bl-chair.png",
+        title: "Stylish",
+        mainTitle: "Plain Chair",
+        price: "$25",
+        
+      },
   ];
 
   return (
@@ -53,10 +63,7 @@ const Hero = () => {
           
         ))}
       </Slider>
-      <button className="bg-red-400 text-white mt-4 py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-200">
-              Shop Now 
-            </button>
-    </div>
+          </div>
   );
 };
 
