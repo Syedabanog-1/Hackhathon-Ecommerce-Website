@@ -7,13 +7,12 @@ import HeaderTop from "./components/HeaderTop";
 import HeaderMin from "./components/HeaderMin";
 
 
-
-
 export default function Home() {
-  return (
+  return 
     <>
+    <HeaderTop />
     <HeaderMin />
-     <HeaderTop />
+    
      <Hero />
       
       <div className="p-4 w-full">
