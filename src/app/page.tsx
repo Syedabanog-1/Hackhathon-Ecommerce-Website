@@ -8,6 +8,7 @@ import HeaderMin from "./components/HeaderMin";
 
 
 
+
 export default function Home() {
   return (
     <>

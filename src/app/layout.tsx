@@ -2,10 +2,9 @@ import React from 'react'
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
-
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Navbar from './components/Navbar';
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,9 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      > 
       
-        <Navbar/>
+        <Navbar />
         {children}
         <Footer/>
       </body>

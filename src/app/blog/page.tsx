@@ -9,7 +9,7 @@ export default function Blog() {
           Remote work has become the new norm for many professionals, offering
           flexibility and the ability to work from anywhere. However, it also
           comes with its own set of challenges that require careful planning and
-          the right tools to stay productive and engaged. In this post, we'll
+          the right tools to stay productive and engaged. In this post, we&apos;ll
           share essential tips and tools to help you master remote work and make
           the most of your work-from-home experience.
         </p>
@@ -26,12 +26,12 @@ export default function Blog() {
           <li>
             <strong>Choose a Quiet, Comfortable Location:</strong> Find a
             dedicated spot in your home where you can work without distractions.
-            Make sure it's comfortable, well-lit, and away from the noise of
+            Make sure it is comfortable, well-lit, and away from the noise of
             everyday household activities.
           </li>
           <li>
             <strong>Ergonomic Furniture:</strong> Invest in an ergonomic chair and
-            desk to ensure that you're comfortable throughout the day. A good
+            desk to ensure that you&apos;re comfortable throughout the day. A good
             chair can help you avoid back and neck pain.
           </li>
           <li>
@@ -46,8 +46,8 @@ export default function Blog() {
         </h2>
         <p className="mb-4">
           One of the challenges of remote work is maintaining a structured
-          routine. Without the physical boundaries of an office, it's easy to lose
-          track of time. Here's how to stay on track:
+          routine. Without the physical boundaries of an office, it&apos;s easy to lose
+          track of time. Here&apos;s how to stay on track:
         </p>
         <ul className="list-disc pl-6 mb-4">
           <li>
@@ -56,13 +56,13 @@ export default function Blog() {
             balance.
           </li>
           <li>
-            <strong>Take Regular Breaks:</strong> Don't forget to take short
+            <strong>Take Regular Breaks:</strong> Don&apos;t forget to take short
             breaks throughout the day. A quick walk or a coffee break can refresh
             your mind and boost productivity.
           </li>
           <li>
             <strong>Create a Morning Ritual:</strong> Start your day with a ritual
-            to signal that you're beginning work. This could be a cup of coffee, a
+            to signal that you&apos;re beginning work. This could be a cup of coffee, a
             walk, or a few minutes of stretching.
           </li>
         </ul>
@@ -71,7 +71,7 @@ export default function Blog() {
           3. Use the Right Tools
         </h2>
         <p className="mb-4">
-          Remote work relies heavily on technology, so it's important to use the
+          Remote work relies heavily on technology, so it&apos;s important to use the
           right tools to stay organized and connected. Some essential tools
           include:
         </p>
@@ -98,7 +98,7 @@ export default function Blog() {
         </h2>
         <p className="mb-4">
           While working from home has its perks, it can also lead to many
-          distractions. Here's how to stay focused:
+          distractions. Here&apos;s how to stay focused:
         </p>
         <ul className="list-disc pl-6 mb-4">
           <li>
@@ -122,7 +122,7 @@ export default function Blog() {
         </h2>
         <p className="mb-4">
           Remote work can blur the lines between personal and professional life.
-          To avoid burnout, it's important to establish a healthy work-life
+          To avoid burnout, it&apos;s important to establish a healthy work-life
           balance:
         </p>
         <ul className="list-disc pl-6 mb-4">
@@ -137,7 +137,7 @@ export default function Blog() {
             practicing mindfulness or meditation.
           </li>
           <li>
-            <strong>Stay Socially Connected:</strong> Don't isolate yourself. Stay
+            <strong>Stay Socially Connected:</strong> Don&apos;t isolate yourself. Stay
             in touch with friends and family, and engage in virtual social events
             to maintain a sense of connection.
           </li>

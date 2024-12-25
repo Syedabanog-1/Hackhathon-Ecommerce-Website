@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import NewProducts from '../components/NewProducts'
 const Shop = ()=> {
     return(<>
     <div className="container mx-auto p-4">
