@@ -3,18 +3,12 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
 import NewProducts from "./components/NewProducts";
-import HeaderTop from "./components/HeaderTop";
-import HeaderMin from "./components/HeaderMin";
 
 
 export default function Home() {
-  return 
+  return (
     <>
-    <HeaderTop />
-    <HeaderMin />
-    
-     <Hero />
-      
+      <Hero />
       <div className="p-4 w-full">
               <Image
                 src="/chair1.jpg"
