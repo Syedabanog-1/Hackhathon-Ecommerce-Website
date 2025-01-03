@@ -72,19 +72,26 @@ export default function Header() {
                         href="/product"
                         className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
                     >
-                        Products
+                        Product
                     </Link>
-                    <Link
+                                       <Link
                         href="/about"
                         className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
                     >
                         About Us
                     </Link>
+                    
                     <Link
                         href="/blog"
                         className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
                     >
                         Blog
+                    </Link>
+                    <Link
+                        href="/faq"
+                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
+                    >
+                        FAQ
                     </Link>
                     <Link
                         href="/contact"
@@ -97,6 +104,12 @@ export default function Header() {
                         className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
                     >
                         Login/Register...
+                    </Link>
+                    <Link
+                        href="/cart"
+                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
+                    >
+                        Cart
                     </Link>
                 </div>
 
