@@ -3,22 +3,30 @@ export const product = {
     type: 'document',
     title: 'Product',
     fields: [
-       
-        {
+       {
             name: 'name',
             type: 'string',
             title: 'Product Name',
-        },
-        {
-            name: 'description',
-            type: 'string',
-            title: 'Description'
         },
         {
             name: 'slug',
             type: 'number',
             title: 'Slug',
         },
+        {
+            name: 'image',
+            type: 'image',
+            title: 'Product Image',
+            options: {
+                hotspot: true // Enables cropping and focal point selection
+            }
+        },
+        {
+            name: 'description',
+            type: 'string',
+            title: 'Description'
+        },
+        
         {
             name: 'price',
             type: 'number',
@@ -68,16 +76,6 @@ export const product = {
             },
             description: 'Add sizes like S , M , L , XL , XXL'
         },
-        {
-            name: 'image',
-            type: 'image',
-            title: 'Product Image',
-            options: {
-                hotspot: true // Enables cropping and focal point selection
-            }
-        }
-    
-
-
-    ]
+    ]     
+     
 }
