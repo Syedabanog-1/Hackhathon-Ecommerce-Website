@@ -45,4 +45,3 @@ const Slide: React.FC<propsTypes> = ({ title, mainTitle, price }) => {
   );
 };
 export default Slide;
-

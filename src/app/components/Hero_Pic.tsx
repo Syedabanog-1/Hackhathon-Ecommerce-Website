@@ -1,7 +1,7 @@
 import React from "react";
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const inter = Inter({

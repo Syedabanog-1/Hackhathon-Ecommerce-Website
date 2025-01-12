@@ -1,9 +1,9 @@
 'use client'
 
 import { useState } from "react"
-import LoginForm from "@/components/LoginForm"
-import SignupForm from "@/components/SignupForm"
-import { Button } from "@/components/ui/button"
+import LoginForm from "../../components/LoginForm"
+import SignupForm from "../../components/SignupForm"
+import { Button } from "../../components/ui/button"
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true)

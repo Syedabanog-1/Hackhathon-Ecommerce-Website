@@ -60,7 +60,7 @@ export const product = {
             name: 'tags',
             type: 'array',
             title: 'Tags',
-            of: [{ type: 'string' }],
+           of: [{ type: 'string' }],
             options: {
                 layout: 'tags'
             },
