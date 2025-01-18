@@ -8,9 +8,11 @@ import {authorType} from './authorType'
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [blockContentType, categoryType, postType, authorType],
 } */
-import { type SchemaTypeDefinition } from 'sanity'
-import { product } from '../product'
+
+  import { type SchemaTypeDefinition } from "sanity";
+import { productSchema } from "./products";
+import { categorySchema } from "./categories";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [product],
+  types: [productSchema, categorySchema],
 }
