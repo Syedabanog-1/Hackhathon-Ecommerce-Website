@@ -28,9 +28,9 @@ export const projectId = assertValue(
   'NEXT_PUBLIC_SANITY_PROJECT_ID is not defined' **/}
 
 
-function assertValue<T>(v: T | undefined, errorMessage: string): T {
+{/**function assertValue<T>(v: T | undefined, errorMessage: string): T {
   if (!v) {
     throw new Error(errorMessage);
   }
   return v;
-}
+}**/}
