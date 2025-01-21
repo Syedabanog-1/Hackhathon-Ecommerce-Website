@@ -25,7 +25,7 @@ const Hero_pic = () => {
           </div>
       <div className="p-4">
         <Image
-          src="/black-chair.png"
+          src="/blackSofaChair.png"
           alt="pretty"
           width={434}
           height={584}

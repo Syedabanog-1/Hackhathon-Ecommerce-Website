@@ -8,11 +8,11 @@ import { Button } from "../../components/ui/button"
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true)
 
+
   return (
     
     <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
-        <LoginForm />
-        <SignupForm />
+       
       <div className="mb-4">
         <Button
           variant="ghost"

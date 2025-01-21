@@ -24,9 +24,10 @@ const targetClient = createClient({
   dataset: NEXT_PUBLIC_SANITY_DATASET || "production", // Default to "production" if not set
   useCdn: false, // Disable CDN for real-time updates
   apiVersion: "2023-01-01", // Sanity API version
-  token: NEXT_PUBLIC_SANITY_AUTH_TOKEN || "skwhGbsijlUHMM1MvQ9O0ny5IjvVqlUqCOiGhRzFOIwvzBfhPh3KSuoNXiZhdSToOMwd88fVYETvvU8ITC7hOGLcRLbGis46JfEwlqT4Pt3J6uBWjN4o1rc3OV45IXyUlj2YWQiCpj2LBTZS838k1Rzmcehcp1BCFSulbLUTAdRq5qkpas58",//API TOKEN FOR AUTHENTICATION
+ token: NEXT_PUBLIC_SANITY_AUTH_TOKEN || "skwhGbsijlUHMM1MvQ9O0ny5IjvVqlUqCOiGhRzFOIwvzBfhPh3KSuoNXiZhdSToOMwd88fVYETvvU8ITC7hOGLcRLbGis46JfEwlqT4Pt3J6uBWjN4o1rc3OV45IXyUlj2YWQiCpj2LBTZS838k1Rzmcehcp1BCFSulbLUTAdRq5qkpas58",//API TOKEN FOR AUTHENTICATION
    
 });
+ 
 
 // Function to upload an image to Sanity
 async function uploadImageToSanity(imageUrl) {
@@ -70,7 +71,7 @@ async function migrateData() {
     // Migrate categories
     for (const category of categoriesData) {
       console.log(`Migrating category: ${category.title}`);
-      const imageId = await uploadImageToSanity(category.imageUrl); // Upload category image
+      const imageId = await uploadImageToSanity(category.imageUrl); // Upload category image 
 
       // Prepare the new category object
       const newCategory = {

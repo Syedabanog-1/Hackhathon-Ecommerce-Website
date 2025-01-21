@@ -2,7 +2,7 @@
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { PiPhoneCallBold } from "react-icons/pi";
 import { FiUser, FiShoppingCart } from "react-icons/fi";
-import { CiHeart, CiSearch } from "react-icons/ci";
+import {CiHeart, CiSearch } from "react-icons/ci";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -33,6 +33,7 @@ export default function Header() {
                     <FiUser className="w-5 h-5 text-white" />
                     <CiHeart className="w-5 h-5 text-white" />
                     <FiShoppingCart className="w-5 h-5 text-white" />
+                    
                 </div>
             </div>
 
@@ -100,7 +101,7 @@ export default function Header() {
                         Contact
                     </Link>
                     <Link
-                        href="/login"
+                        href="/user"
                         className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
                     >
                         Login/Register...
@@ -122,7 +123,7 @@ export default function Header() {
                     />
                     <div className="w-[35px] h-[35px] bg-[#FB2E86] flex items-center justify-center rounded-r">
                         <CiSearch className="w-5 h-5 text-white" />
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>

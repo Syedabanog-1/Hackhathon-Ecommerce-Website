@@ -1,4 +1,7 @@
-import Image from "next/image";
+
+
+
+ import Image from "next/image";
 import React from "react";
 
 interface propsType {
@@ -18,7 +21,7 @@ const ProductCard: React.FC<propsType> = ({
   return (
     <div className="border p-4 rounded-lg">
       <div className="flex justify-center">
-        {/* Image component for product */}
+        {/* Image component for product **/}
         <Image className="w-full h-auto" src="/Logo.png" width={200} height={200} alt="Look" />
       </div>
       <div className="mt-4">
@@ -31,4 +34,4 @@ const ProductCard: React.FC<propsType> = ({
   );
 };
 
-export default ProductCard;
+export default ProductCard; 

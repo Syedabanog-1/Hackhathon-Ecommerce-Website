@@ -19,32 +19,28 @@ const Hero = () => {
     {
       
       id: 0,
-      img: "/desk chair.png",
-      title: "Trending Accessories",
-      mainTitle: "Wings Chair",
-      price: "$30",
+      img: "/blackSofaChair.png",
+      title: "Comfort Chair",
+      price: "$280",
     },
     {
       id: 1,
-      img: "/table chair.png",
-      title: "Trending Item",
-      mainTitle: "Moveable Chair",
-      price: "$40",
+      img: "/BlackChairWithCushion.jpg",
+      title: "Cusion Chair",
+       price: "160",
       },
       {
         id: 2,
-        img: "/orange chair.png",
-        title: "Trending Item",
-        mainTitle: "Comfort Chair",
-        price: "$20",
+        img: "/GreenSofa.jpg",
+        title: "Long Green Sofa",
+        price: "$320",
         
       },
       {
         id: 3,
-        img: "/plain bl-chair.png",
-        title: "Stylish",
-        mainTitle: "Plain Chair",
-        price: "$25",
+        img: "/PairOfChairs.png",
+        title: "Moveable Desk Chair",
+        price: "$270",
         
       },
   ];
@@ -57,7 +53,7 @@ const Hero = () => {
             key={item.id}
             img={item.img}
             title={item.title}
-            mainTitle={item.mainTitle}
+            mainTitle={item.title}
             price={item.price}
           />
           

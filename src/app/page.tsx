@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <div className="p-4 w-full">
               <Image
-                src="/chair1.jpg"
+                src="/chair1.png"
                 alt="pretty"
                 width={434}
                 height={584}
@@ -24,4 +24,3 @@ export default function Home() {
     </>
   );
 }
-      
