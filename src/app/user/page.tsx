@@ -11,7 +11,7 @@ export default function AuthPage() {
 
   return (
     
-    <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
+    <div className="min-1/2-screen flex flex-col items-center justify-center bg-slate-600 text-white">
        
       <div className="mb-4">
         <Button
