@@ -11,7 +11,7 @@ interface propsTypes {
   price: string;
 }
 
-const Slide: React.FC<propsTypes> = ({ title, mainTitle, price }) => {
+const Slide: React.FC<propsTypes> = ({ title,price }) => {
   return (
     <div className="relative outline-none border-none flex flex-col items-center md:flex-row">
       {/* Text Section */}

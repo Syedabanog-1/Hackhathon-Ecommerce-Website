@@ -1,14 +1,11 @@
-
-"use client"
-import React, { useState } from "react";
+"use client";
+import React from "react";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const HeaderTop = () => {
-  const [languageOpen, setLanguageOpen] = useState(false);
-
   const handleLanguageClick = () => {
     if (window.innerWidth <= 640) {
-      setLanguageOpen(false);
+      // Add any necessary logic here if needed
     }
   };
 
