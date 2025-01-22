@@ -1,0 +1,441 @@
+[
+  {
+    "title": "Fancy Single Chair",
+    "specifications": {
+      "AssemblyRequired": "No",
+      "Dimensions": "34 x 22 x 21 inches",
+      "Material": "Molded fiberglass",
+      "WeightCapacity": "200 lbs"
+    },
+    "features": [
+      "Elegant details",
+      "Premium upholstery",
+      "Durable frame"
+    ],
+    "price": 40,
+    "_createdAt": "2025-01-19T12:00:55Z",
+    "_type": "products",
+    "inventory": 10,
+    "category": {
+      "_ref": "407a8583-6203-4f61-becf-8e8b4c5461b6",
+      "_type": "reference"
+    },
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-22a5f7809ad776adfbaa6a2b2b07df20d92c9814-1000x1000-jpg",
+        "_type": "reference"
+      }
+    },
+    "_rev": "jGHNK2T7WRTGSZ6Crs5bdO",
+    "_updatedAt": "2025-01-20T10:13:37Z",
+    "description": "An elegant single chair with refined details and premium upholstery.",
+    "badge": null,
+    "priceWithoutDiscount": null,
+    "_id": "AJVJVObFUPWewZSbi5viFm"
+  },
+  {
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-2ac1e785552da4c19bfb5cfdc814f6829c9b150e-1000x1000-jpg"
+      }
+    },
+    "description": "A compact and versatile stool chair with short legs, perfect for casual seating areas.",
+    "_createdAt": "2025-01-19T12:01:03Z",
+    "_id": "aWt125CyehY2YfnCtzke1K",
+    "category": {
+      "_ref": "26fd7176-3c4d-40fc-a73a-3b85a9b5e15f",
+      "_type": "reference"
+    },
+    "_rev": "aWt125CyehY2YfnCu2aQBg",
+    "title": "Round Short-Leg Stool",
+    "specifications": {
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "16 x 14 x 14 inches",
+      "Material": "Steel / Metal",
+      "WeightCapacity": "220 lbs"
+    },
+    "price": 45,
+    "inventory": 10,
+    "features": [
+      "Lightweight",
+      "Minimalist design",
+      "Portable"
+    ],
+    "priceWithoutDiscount": 50,
+    "_type": "products",
+    "badge": null,
+    "_updatedAt": "2025-01-20T10:05:42Z"
+  },
+  {
+    "title": "Bold Accent Chair",
+    "features": [
+      "Eye-catching color",
+      "Durable frame",
+      "Comfortable padding"
+    ],
+    "_updatedAt": "2025-01-20T09:53:29Z",
+    "tags": [
+      "featured",
+      "instagram",
+      "gallery"
+    ],
+    "_rev": "AJVJVObFUPWewZSbi70eUm",
+    "_type": "products",
+    "description": "A vibrant orange chair with a unique design, great for adding a pop of color.",
+    "inventory": 20,
+    "specifications": {
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "34 x 22 x 20 inches",
+      "Material": "Molded fiberglass",
+      "WeightCapacity": "275 lbs"
+    },
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-4cd62915914fb385550532c3d1f0c4d64c1f8cca-312x312-png"
+      }
+    },
+    "badge": null,
+    "priceWithoutDiscount": null,
+    "price": 50,
+    "_createdAt": "2025-01-19T18:28:44Z",
+    "_id": "aWt125CyehY2YfnCu0pkiI",
+    "category": {
+      "_ref": "b5710116-09af-4d0e-aa9a-dcd02fe919a9",
+      "_type": "reference"
+    }
+  },
+  {
+    "specifications": {
+      "Material": "Velvet and metal",
+      "WeightCapacity": "250 lbs",
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "30 x 25 x 22 inches"
+    },
+    "features": [
+      "Luxurious velvet",
+      "Tufted backrest",
+      "Stylish and modern"
+    ],
+    "priceWithoutDiscount": 85,
+    "_id": "aWt125CyehY2YfnCu0pl64",
+    "_type": "products",
+    "description": "A soft pink upholstered chair with tufted design, perfect for adding a chic touch.",
+    "inventory": 20,
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-af6865cccbcd12d2183f8090324d0e5c5732e57f-312x312-png"
+      }
+    },
+    "title": "Blush Velvet Chair",
+    "_updatedAt": "2025-01-20T09:48:25Z",
+    "_rev": "aWt125CyehY2YfnCu2XxiC",
+    "badge": "Sales",
+    "category": {
+      "_type": "reference",
+      "_ref": "26fd7176-3c4d-40fc-a73a-3b85a9b5e15f"
+    },
+    "tags": [
+      "featured",
+      "instagram"
+    ],
+    "price": 75,
+    "_createdAt": "2025-01-19T18:28:46Z"
+  },
+  {
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-384113dbb404b90828b52ffca9c3ccca7a4f626b-312x312-png"
+      }
+    },
+    "description": "A black chair with a cozy cushion, combining style and comfort for any room.",
+    "inventory": 20,
+    "badge": null,
+    "_createdAt": "2025-01-19T18:28:52Z",
+    "title": "Modern Comfort Chair",
+    "tags": [
+      "instagram"
+    ],
+    "features": [
+      "Plush cushion",
+      "Ergonomic design",
+      "Timeless black finish"
+    ],
+    "price": 70,
+    "_id": "aWt125CyehY2YfnCu0pmny",
+    "category": {
+      "_ref": "407a8583-6203-4f61-becf-8e8b4c5461b6",
+      "_type": "reference"
+    },
+    "_updatedAt": "2025-01-20T09:40:35Z",
+    "_rev": "AJVJVObFUPWewZSbi70EbO",
+    "_type": "products",
+    "specifications": {
+      "Dimensions": "31 x 21 x 20 inches",
+      "Material": "Wood, Metal and fabric",
+      "WeightCapacity": "280 lbs",
+      "AssemblyRequired": "Assembled"
+    },
+    "priceWithoutDiscount": null
+  },
+  {
+    "inventory": 20,
+    "title": "Wooden Rocking Chair",
+    "badge": "New",
+    "features": [
+      "Smooth rocking motion",
+      "High-quality wood",
+      "Traditional craftsmanship"
+    ],
+    "_createdAt": "2025-01-19T12:00:57Z",
+    "_id": "jGHNK2T7WRTGSZ6CrprL0A",
+    "_updatedAt": "2025-01-20T10:09:19Z",
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-c5f40d076aaef443a41407d4dc553f089a1577a1-1000x1000-jpg",
+        "_type": "reference"
+      }
+    },
+    "_rev": "aWt125CyehY2YfnCu2amx0",
+    "specifications": {
+      "Material": "Solid wood",
+      "WeightCapacity": "350 lbs",
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "40 x 26 x 22 inches"
+    },
+    "price": 95,
+    "_type": "products",
+    "description": "A classic wooden rocking chair combining traditional craftsmanship with comfort.",
+    "priceWithoutDiscount": 110
+  },
+  {
+    "_type": "products",
+    "tags": [
+      "gallery"
+    ],
+    "specifications": {
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "30 x 20 x 20 inches",
+      "Material": "Metal and fabric",
+      "WeightCapacity": "250 lbs"
+    },
+    "priceWithoutDiscount": null,
+    "price": 50,
+    "_id": "jGHNK2T7WRTGSZ6Crqgd6S",
+    "image": {
+      "asset": {
+        "_ref": "image-81a5b7de166f930870a82f8f3e661b38a70de9f4-312x312-png"
+      },
+      "_type": "image"
+    },
+    "_rev": "aWt125CyehY2YfnCu2XYc4",
+    "description": "Stylish office chairs available in pink and black, adding a chic look to workspaces.",
+    "badge": null,
+    "_updatedAt": "2025-01-20T09:45:21Z",
+    "inventory": 10,
+    "title": "Dual-Toned Office Chairs",
+    "features": [
+      "Dual-tone colors",
+      "Comfortable seating",
+      "Durable for daily use"
+    ],
+    "_createdAt": "2025-01-19T18:28:48Z",
+    "category": {
+      "_ref": "b5710116-09af-4d0e-aa9a-dcd02fe919a9",
+      "_type": "reference"
+    }
+  },
+  {
+    "inventory": 10,
+    "specifications": {
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "32 x 20 x 18 inches",
+      "Material": "Solid wood",
+      "WeightCapacity": "300 lbs"
+    },
+    "priceWithoutDiscount": null,
+    "_createdAt": "2025-01-19T18:28:50Z",
+    "_id": "jGHNK2T7WRTGSZ6Crqgdaw",
+    "image": {
+      "asset": {
+        "_ref": "image-da30e4081507761b5b7558807735f8f17756c9c3-624x624-png"
+      },
+      "_type": "image"
+    },
+    "_rev": "aWt125CyehY2YfnCu2XBQo",
+    "description": "A classic white chair with a vintage design, perfect for libraries or cozy corners.",
+    "category": {
+      "_ref": "407a8583-6203-4f61-becf-8e8b4c5461b6",
+      "_type": "reference"
+    },
+    "_type": "products",
+    "badge": "New",
+    "features": [
+      "High-quality wood",
+      "Comfortable design",
+      "Perfect for reading"
+    ],
+    "title": "Vintage Library Chair",
+    "_updatedAt": "2025-01-20T09:42:07Z",
+    "tags": [
+      "featured",
+      "instagram",
+      "gallery"
+    ],
+    "price": 40
+  },
+  {
+    "_updatedAt": "2025-01-20T09:36:48Z",
+    "_type": "products",
+    "description": "A compact dining set featuring a table and stools, with a modern industrial vibe.",
+    "title": "Industrial Dining Set",
+    "features": [
+      "Space-saving design",
+      "Durable frame",
+      "Modern industrial look"
+    ],
+    "price": 120,
+    "_createdAt": "2025-01-19T18:28:54Z",
+    "specifications": {
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "Table: 40 x 30 x 28 inches - Stools: 18 x 18 x 16 inches",
+      "Material": "Wood 99.9% "
+    },
+    "tags": [
+      "gallery"
+    ],
+    "badge": null,
+    "_rev": "jGHNK2T7WRTGSZ6Crs2Ps6",
+    "priceWithoutDiscount": null,
+    "_id": "jGHNK2T7WRTGSZ6CrqgeFa",
+    "category": {
+      "_ref": "407a8583-6203-4f61-becf-8e8b4c5461b6",
+      "_type": "reference"
+    },
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-f49ec164e3b62fbf8ad5d3b7cf0e5622478ee0ba-312x312-png"
+      }
+    },
+    "inventory": 20
+  },
+  {
+    "priceWithoutDiscount": null,
+    "_createdAt": "2025-01-19T18:28:56Z",
+    "_rev": "aWt125CyehY2YfnCu2X5vK",
+    "description": "A rounded beige chair with a cozy, modern Scandinavian design.",
+    "category": {
+      "_ref": "26fd7176-3c4d-40fc-a73a-3b85a9b5e15f",
+      "_type": "reference"
+    },
+    "badge": "New",
+    "price": 90,
+    "_updatedAt": "2025-01-20T09:41:13Z",
+    "inventory": 20,
+    "title": "Scandinavian Lounge Chair",
+    "tags": [
+      "instagram"
+    ],
+    "features": [
+      "Soft fabric",
+      "Curved backrest",
+      "Inspired by Scandinavian design"
+    ],
+    "_id": "jGHNK2T7WRTGSZ6CrqgeiN",
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0625575b88f2a2479f9d194dca7322fa5b3fb29d-312x312-png"
+      }
+    },
+    "_type": "products",
+    "specifications": {
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "32 x 22 x 20 inches",
+      "Material": "Fabric and wood",
+      "WeightCapacity": "270 lbs"
+    }
+  },
+  {
+    "description": "A sophisticated upholstered chair, ideal for dining or meeting spaces.",
+    "features": [
+      "Soft fabric upholstery",
+      "Sturdy frame",
+      "Ideal for gatherings"
+    ],
+    "_updatedAt": "2025-01-20T09:41:28Z",
+    "inventory": 20,
+    "badge": "Sales",
+    "priceWithoutDiscount": 75,
+    "_createdAt": "2025-01-19T18:28:58Z",
+    "_id": "jGHNK2T7WRTGSZ6Crqgf4O",
+    "_rev": "jGHNK2T7WRTGSZ6Crs2mQy",
+    "title": "Elegant Dining Chair",
+    "specifications": {
+      "Material": "Fabric and wood",
+      "WeightCapacity": "260 lbs",
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "33 x 20 x 18 inches"
+    },
+    "tags": [
+      "instagram",
+      "gallery"
+    ],
+    "price": 60,
+    "category": {
+      "_ref": "26fd7176-3c4d-40fc-a73a-3b85a9b5e15f",
+      "_type": "reference"
+    },
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-e284d160de43302fabbd063072c1fd021396094b-312x312-png"
+      }
+    },
+    "_type": "products"
+  },
+  {
+    "_type": "products",
+    "title": "Ivory Elegance Chair",
+    "specifications": {
+      "AssemblyRequired": "Assembled",
+      "Dimensions": "35 x 23 x 21 inches",
+      "Material": "Wood, Leather and steel",
+      "WeightCapacity": "300 lbs"
+    },
+    "_createdAt": "2025-01-19T18:29:00Z",
+    "_id": "jGHNK2T7WRTGSZ6CrqgfaZ",
+    "_rev": "aWt125CyehY2YfnCu2X2c0",
+    "_updatedAt": "2025-01-20T09:40:51Z",
+    "description": "A cream tufted chair with a luxurious and elegant design, ideal for living spaces.",
+    "tags": [
+      "featured",
+      "gallery"
+    ],
+    "features": [
+      "Elegant cream finish",
+      "Soft cushioning",
+      "Versatile for any decor"
+    ],
+    "priceWithoutDiscount": null,
+    "price": 85,
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-7e3a3a9ca8b3003aa2733bdf94db7ea4345f5bf4-312x312-png"
+      }
+    },
+    "category": {
+      "_ref": "26fd7176-3c4d-40fc-a73a-3b85a9b5e15f",
+      "_type": "reference"
+    },
+    "inventory": 20
+  }
+]
