@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,10 +15,16 @@ const Footer = () => {
               customers.
             </p>
           </div>
+
           {/* Customer Service Section */}
           <div>
             <h3 className="text-lg font-bold mb-4">Customer Service</h3>
             <ul className="space-y-2">
+              <li>
+                <Link href="/shipment" className="text-gray-400 hover:text-white">
+                  Track Shipping
+                </Link>
+              </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white">
                   Contact Us
@@ -46,7 +53,12 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Follow Us</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://www.facebook.com/profile.php?id=100090843034764" className="text-gray-400 hover:text-white">
+                <a 
+                  href="https://www.facebook.com/profile.php?id=100090843034764" 
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Facebook
                 </a>
               </li>
@@ -56,17 +68,29 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/Syedabanog-1" className="text-gray-400 hover:text-white">
+                <a 
+                  href="https://github.com/Syedabanog-1" 
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/gulzar-bano-syeda-b3b7b1230" className="text-gray-400 hover:text-white">
+                <a 
+                  href="https://www.linkedin.com/in/gulzar-bano-syeda-b3b7b1230" 
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   LinkedIn
                 </a>
               </li>
             </ul>
           </div>
+
+          {/* Newsletter Section */}
           <div>
             <h3 className="text-lg font-bold mb-4">Newsletter</h3>
             <p className="text-gray-400 mb-4">
@@ -85,6 +109,7 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Copyright Section */}
         <div className="mt-8 text-center border-t border-gray-700 pt-4">
           <p className="text-gray-400">
             &copy; {new Date().getFullYear()} Your Store. All rights reserved.

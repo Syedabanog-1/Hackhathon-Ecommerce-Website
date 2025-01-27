@@ -63,6 +63,7 @@ export default function Header() {
                     >
                         Home
                     </Link>
+                    
                     <Link
                         href="/shop"
                         className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
@@ -75,13 +76,14 @@ export default function Header() {
                     >
                         Product
                     </Link>
+                                      
                                        <Link
                         href="/about"
                         className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
                     >
                         About Us
                     </Link>
-                    
+                                       
                     <Link
                         href="/blog"
                         className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"

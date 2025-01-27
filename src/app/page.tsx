@@ -1,9 +1,8 @@
-// src/app/page.tsx
 
 import Image from "next/image";
 import Hero from "./components/Hero";
 import NewProducts from "./components/NewProducts";
-
+import PopularStyles from "../components/ui/PopularStyles";
 
 
 export default function Home() {
@@ -18,7 +17,10 @@ export default function Home() {
                 height={584}
               />
               </div>
+              
+            {/* Add your featured products here */}
           
+          <PopularStyles/>
   <NewProducts />
     
     </>

@@ -1,33 +1,43 @@
-import Image from "next/image";
-import { ShoppingCart } from "lucide-react";
-import { notFound } from "next/navigation";
+"use client"
+
+import { useCart } from "../../components/CartContext"
+import Image from "next/image"
+import { ShoppingCart } from "lucide-react"
+import { notFound } from "next/navigation"
+import { useState } from "react"
+import Toast from "../../components/Toast"
 
 type Product = {
-  src: string;
-  name: string;
-  description: string;
-  price: number;
-  badge?: "New" | "Sale";
-  originalPrice?: number;
-  features: string[];
+  id: number
+  src: string
+  name: string
+  description: string
+  price: number
+  badge?: "New" | "Sale"
+  originalPrice?: number
+  features: string[]
   specifications: {
-    Material: string;
-    "Weight Capacity": string;
-    Dimensions: string;
-    "Assembly Required": string;
-  };
-};
+    Material: string
+    "Weight Capacity": string
+    Dimensions: string
+    "Assembly Required": string
+  }
+  color?: string
+  size?: string
+}
 
 type Props = {
-  params: {
-    id: string;
-  };
-};
+  params: { id: string }
+}
 
 export default function ProductPage({ params }: Props) {
- 
+  const { id } = params 
+  const productId = Number(id)
+  const { addItem } = useCart()
+  const [showToast, setShowToast] = useState(false)
 const products: Product[] = [
     {
+      id: 0,
       src: "/whiteChair.jpg",
       name: "Vintage Library Chair",
       description: "A classic white chair with a vintage design, perfect for libraries or cozy corners.",
@@ -42,6 +52,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 1,
       src: "/PinkUpholsteredChair.jpg",
       name: "Blush Velvet Chair",
       description: "A soft pink upholstered chair with tufted design, perfect for adding a chic touch.",
@@ -57,6 +68,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 2,
       src: "/orangeChair.jpg",
       name: "Bold Accent Chair",
       description: "A vibrant orange chair with a unique design, great for adding a pop of color.",
@@ -70,6 +82,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 3,
       src: "/CreamTuftedChair.jpg",
       name: "Ivory Elegance Chair",
       description: "A cream tufted chair with a luxurious and elegant design, ideal for living spaces.",
@@ -83,6 +96,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 4,
       src: "/TASS.png",
       name: "Industrial Dining Set",
       description: "A compact dining set featuring a table and stools, with a modern industrial vibe.",
@@ -97,6 +111,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 5,
       src: "/upholsteredChair.jpg",
       name: "Elegant Dining Chair",
       description: "A sophisticated upholstered chair, ideal for dining or meeting spaces.",
@@ -112,6 +127,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 6,
       src: "/BlackChairWithCushion.jpg",
       name: "Modern Comfort Chair",
       description: "A black chair with a cozy cushion, combining style and comfort for any room.",
@@ -125,6 +141,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 7,
       src: "/RoundShortLegStoolChair.jpg",
       name: "Round Short-Leg Stool",
       description: "A compact and versatile stool chair with short legs, perfect for casual seating areas.",
@@ -138,6 +155,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 8,
       src: "/RoundedBeigeChair.jpg",
       name: "Scandinavian Lounge Chair",
       description: "A rounded beige chair with a cozy, modern Scandinavian design.",
@@ -152,6 +170,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 9,
       src: "/WoodenRockingChair.jpg",
       name: "Wooden Rocking Chair",
       description: "A classic wooden rocking chair combining traditional craftsmanship with comfort.",
@@ -167,6 +186,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 10,
       src: "/FancySingleChair.jpg",
       name: "Fancy Single Chair",
       description: "An elegant single chair with refined details and premium upholstery.",
@@ -180,6 +200,7 @@ const products: Product[] = [
       },
     },
     {
+      id: 11,
       src: "/POC.jpg",
       name: "Dual-Toned Office Chairs",
       description: "Stylish office chairs available in pink and black, adding a chic look to workspaces.",
@@ -193,27 +214,42 @@ const products: Product[] = [
       },
     },
   ];
-
-  // Ensure the ID is a valid integer
-  const productId = parseInt(params.id, 10);
   
-  // Check if the productId is valid and within bounds
-  if (isNaN(productId) || productId < 0 || productId >= products.length) {
-    notFound(); // If invalid, show the 404 page
+  // Find the product with the matching id
+  const product = products.find((p) => p.id === productId)
+
+  // Check if the product exists
+  if (!product) {
+    notFound() // If invalid, show the 404 page
   }
 
-  const product = products[productId];
+  const handleAddToCart = () => {
+    addItem({
+      id: product.id,
+      image: product.src,
+      name: product.name,
+      color: product.color || "Default",
+      size: product.size || "Standard",
+      quantity: 1,
+      price: product.price,
+    })
+    setShowToast(true)
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <Toast
+        message={`${product.name} Added to Cart`}
+        isVisible={showToast}
+        onClose={() => setShowToast(false)}
+        toastType="success"
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="relative aspect-square w-full">
           {product.badge && (
             <div
               className={`absolute top-4 left-4 z-10 px-3 py-1 rounded-md text-sm ${
-                product.badge === "New"
-                  ? "bg-[#01AD5A] text-white"
-                  : "bg-[#FF6F61] text-white"
+                product.badge === "New" ? "bg-[#01AD5A] text-white" : "bg-[#FF6F61] text-white"
               }`}
             >
               {product.badge}
@@ -221,7 +257,7 @@ const products: Product[] = [
           )}
           <div className="relative w-full h-full">
             <Image
-              src={product.src}
+              src={product.src || "/placeholder.svg"}
               alt={product.name}
               fill
               className="object-cover rounded-lg"
@@ -233,33 +269,24 @@ const products: Product[] = [
 
         <div className="flex flex-col gap-6">
           <div>
-            <h1 className="text-3xl font-semibold text-[#272343] mb-2">
-              {product.name}
-            </h1>
-            <p className="text-[#9A9CAA] text-lg mb-4">
-              {product.description}
-            </p>
+            <h1 className="text-3xl font-semibold text-[#272343] mb-2">{product.name}</h1>
+            <p className="text-[#9A9CAA] text-lg mb-4">{product.description}</p>
             <div className="flex gap-3 items-center">
-              <p className="text-2xl font-medium text-[#272343]">
-                ${product.price}
-              </p>
-              {product.originalPrice && (
-                <p className="text-[#9A9CAA] line-through text-lg">
-                  ${product.originalPrice}
-                </p>
-              )}
+              <p className="text-2xl font-medium text-[#272343]">${product.price}</p>
+              {product.originalPrice && <p className="text-[#9A9CAA] line-through text-lg">${product.originalPrice}</p>}
             </div>
           </div>
 
-          <button className="flex items-center justify-center gap-2 bg-[#029FAE] hover:bg-[#076068] text-white py-3 px-6 rounded-lg w-full md:w-auto">
+          <button
+            onClick={handleAddToCart}
+            className="flex items-center justify-center gap-2 bg-[#029FAE] hover:bg-[#076068] text-white py-3 px-6 rounded-lg w-full md:w-auto"
+          >
             <ShoppingCart className="w-5 h-5" />
             <span>Add to Cart</span>
           </button>
 
           <div className="mt-8">
-            <h2 className="text-xl font-semibold text-[#272343] mb-4">
-              Product Features
-            </h2>
+            <h2 className="text-xl font-semibold text-[#272343] mb-4">Product Features</h2>
             <ul className="list-disc pl-5 space-y-2 text-[#9A9CAA]">
               {product.features.map((feature, index) => (
                 <li key={index}>{feature}</li>
@@ -268,9 +295,7 @@ const products: Product[] = [
           </div>
 
           <div className="mt-6">
-            <h2 className="text-xl font-semibold text-[#272343] mb-4">
-              Specifications
-            </h2>
+            <h2 className="text-xl font-semibold text-[#272343] mb-4">Specifications</h2>
             <div className="grid grid-cols-2 gap-4 text-[#9A9CAA]">
               <div>
                 <p className="font-medium">Material</p>
@@ -293,7 +318,6 @@ const products: Product[] = [
         </div>
       </div>
     </div>
-  );
+  )
 }
-
 
