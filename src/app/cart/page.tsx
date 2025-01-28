@@ -1,10 +1,14 @@
-"use client";
-
+"use client"
+import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { useCart } from "../components/CartContext";
 import { Heart, Trash2 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useToast } from "../components/Toast";
+//import {ShippingRatesPage }from "../../app/shipment"
+
+
+
 
 interface CartItem {
   id: number;
@@ -77,9 +81,11 @@ const CartPage = () => {
   return (
     <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-2 my-16">
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 text-center">
+      
         {/* Cart Items Section */}
         <div className="flex flex-col gap-6 w-full lg:w-2/3">
           <h2 className="font-inter font-medium text-xl sm:text-2xl text-[#111111] md:text-left">Bag</h2>
+        
           {cartItems.length === 0 ? (
             <div className="text-center text-[#757575] font-inter">
               <p className="text-lg sm:text-xl">Your cart is empty! 🛒</p>
@@ -102,6 +108,7 @@ const CartPage = () => {
                     width={200}
                     height={200}
                   />
+                  
                 </div>
 
                 {/* Text Section */}
@@ -215,6 +222,7 @@ const CartPage = () => {
               <button className="w-full py-3 bg-[#029FAE] hover:bg-[#15727a] rounded-full text-white font-inter font-medium text-sm sm:text-base">
                 Member Checkout
               </button>
+             
             </>
           )}
         </div>
@@ -275,11 +283,14 @@ const CartPage = () => {
               >
                 No
               </button>
+              
             </div>
           </div>
         </div>
       )}
+      
     </div>
+    
   );
 };
 

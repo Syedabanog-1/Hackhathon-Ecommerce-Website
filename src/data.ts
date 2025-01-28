@@ -1,4 +1,4 @@
-import {Package} from './type'
+import {Package} from '../src/type'
 interface Product extends Package {
   name: string
   
