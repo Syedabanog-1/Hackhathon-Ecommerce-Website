@@ -222,7 +222,17 @@ const CartPage = () => {
               <button className="w-full py-3 bg-[#029FAE] hover:bg-[#15727a] rounded-full text-white font-inter font-medium text-sm sm:text-base">
                 Member Checkout
               </button>
-             
+              <div>
+            <h3 className="text-lg font-bold mb-4">Customer Service</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/shipment" className="text-gray-400 hover:text-white">
+                  Track Shipping
+                </Link>
+              </li>
+              </ul>
+              </div>
+
             </>
           )}
         </div>
