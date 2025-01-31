@@ -91,7 +91,7 @@ import Link from "next/link";
     return (
       <div className="min-h-screen text-black bg-gray-100 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl font-bold text-pink-600 mb-6">
             Shipping Rates Calculator
           </h1>
   
@@ -99,7 +99,7 @@ import Link from "next/link";
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* To Address Section */}
             <div>
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-blue-500 mb-4">
                 Ship To Address
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -110,7 +110,7 @@ import Link from "next/link";
                   onChange={(e) =>
                     setshipeToAddress({ ...shipeToAddress, name: e.target.value })
                   }
-                  className="p-2 border border-gray-300 rounded-md"
+                  className="p-2 border border-gray-800 rounded-md"
                   required
                 />
                 <input
@@ -123,7 +123,7 @@ import Link from "next/link";
                       phone: e.target.value,
                     })
                   }
-                  className="p-2 border border-gray-300 rounded-md"
+                  className="p-2 border border-gray-800 rounded-md"
                   required
                 />
                 <input
@@ -136,7 +136,7 @@ import Link from "next/link";
                       addressLine1: e.target.value,
                     })
                   }
-                  className="p-2 border border-gray-300 rounded-md"
+                  className="p-2  border-gray-800 rounded-md"
                   required
                 />
                 <input
@@ -149,7 +149,7 @@ import Link from "next/link";
                       addressLine2: e.target.value,
                     })
                   }
-                  className="p-2 border border-gray-300 rounded-md"
+                  className="p-2 border border-gray-800 rounded-md"
                 />
                 <input
                   type="text"
@@ -161,7 +161,7 @@ import Link from "next/link";
                       cityLocality: e.target.value,
                     })
                   }
-                  className="p-2 border border-gray-300 rounded-md"
+                  className="p-2 border border-gray-800 rounded-md"
                   required
                 />
                 <input
@@ -174,7 +174,7 @@ import Link from "next/link";
                       stateProvince: e.target.value,
                     })
                   }
-                  className="p-2 border border-gray-300 rounded-md"
+                  className="p-2 border-gray-800 rounded-md"
                   required
                 />
                 <input
@@ -187,7 +187,7 @@ import Link from "next/link";
                       postalCode: e.target.value,
                     })
                   }
-                  className="p-2 border border-gray-300 rounded-md"
+                  className="p-2 border-gray-800 rounded-md"
                   required
                 />
                 <input
@@ -200,7 +200,7 @@ import Link from "next/link";
                       countryCode: e.target.value,
                     })
                   }
-                  className="p-2 border border-gray-300 rounded-md"
+                  className="p-2  border-gray-800 rounded-md"
                   required
                 />
               </div>
@@ -210,7 +210,7 @@ import Link from "next/link";
             <button
               type="submit"
               disabled={loading}
-              className="w-full px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 disabled:bg-gray-400"
+              className="w-full px-4 py-2 bg-blue-700 text-white rounded-md hover:bg-green-300 disabled:bg-gray-400"
             >
               {loading ? "Calculating..." : "Get Shipping Rates"}
             </button>
@@ -219,7 +219,7 @@ import Link from "next/link";
           {/* Display Available Rates */}
           {rates.length > 0 && (
             <div className="mt-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-green-400 mb-4">
                 Available Shipping Rates
               </h2>
               <div className="gap-4 flex items-center flex-wrap">
@@ -293,7 +293,7 @@ import Link from "next/link";
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Errors</h2>
               <div className="space-y-2">
                 {errors.map((error, index) => (
-                  <p key={index} className="text-red-500">
+                  <p key={index} className="text-green-950">
                     {error}
                   </p>
                 ))}
