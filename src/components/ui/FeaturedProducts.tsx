@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "../../app/components/CartContext";
 import { useToast } from "../../app/components/Toast"; 
+import React from "react";
 
 interface ImageProps {
   src: string;
