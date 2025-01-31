@@ -6,6 +6,7 @@ import { Heart, Trash2 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useToast } from "../components/Toast";
 //import {ShippingRatesPage }from "../../app/shipment"
+import { useRouter } from "next/navigation";
 
 
 
@@ -27,7 +28,7 @@ const CartPage = () => {
   const [showRemoveDialog, setShowRemoveDialog] = useState(false);
   const [itemToRemove, setItemToRemove] = useState<CartItem | null>(null);
   const [isWishlistRemoval, setIsWishlistRemoval] = useState(false);
-
+  const router = useRouter();
   // Load wishlist from localStorage on component mount
   useEffect(() => {
     const savedWishlist = localStorage.getItem('wishlistItems');
@@ -219,9 +220,12 @@ const CartPage = () => {
                 </p>
               </div>
               <div className="w-full h-[2px] bg-[#E5E5E5]" />
-              <button className="w-full py-3 bg-[#029FAE] hover:bg-[#15727a] rounded-full text-white font-inter font-medium text-sm sm:text-base">
-                Member Checkout
-              </button>
+              <button
+  className="w-full py-3 bg-[#029FAE] hover:bg-[#15727a] rounded-full text-white font-inter font-medium text-sm sm:text-base"
+  onClick={() => router.push("/shipment")} 
+>
+  Member Checkout
+</button>
               <div>
             <h3 className="text-lg font-bold mb-4">Customer Service</h3>
             <ul className="space-y-2">
