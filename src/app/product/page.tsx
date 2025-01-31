@@ -44,7 +44,9 @@ const AllProductpage = () => {
       src: "/orangeChair.jpg",
       name: "Bold Accent Chair",
       description: "A vibrant orange chair with a unique design, great for adding a pop of color.",
-      price: 50
+      price: 50,
+      originalPrice: 90,
+      badge: "Sale"
     },
     {
       id: 3,
