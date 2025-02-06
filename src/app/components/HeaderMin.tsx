@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image"; // Correct import for next/image
 import Navbar from '../components/Navbar';
 
+
 const HeaderMin = () => {
   return (<>
     <Navbar />

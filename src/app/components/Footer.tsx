@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -115,7 +116,10 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Your Store. All rights reserved.
           </p>
         </div>
+          
+
       </div>
+      
     </footer>
   );
 };

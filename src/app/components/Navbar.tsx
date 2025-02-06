@@ -1,19 +1,22 @@
 "use client";
+
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { PiPhoneCallBold } from "react-icons/pi";
 import { FiUser, FiShoppingCart } from "react-icons/fi";
-import {CiHeart, CiSearch } from "react-icons/ci";
+import { CiHeart, CiSearch } from "react-icons/ci";
 import { useState } from "react";
 import Link from "next/link";
 
+
+
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [value, setValue] = useState("");
 
     return (
         <div>
-  
+            {/* Top Contact Bar */}
             <div className="h-[50px] w-full bg-[#7E33E0] flex items-center justify-between px-5 sm:px-8">
-       
                 <div className="flex items-center space-x-4 ml-4">
                     <div className="flex items-center space-x-2">
                         <RxEnvelopeClosed className="w-4 h-4 text-white" />
@@ -29,21 +32,36 @@ export default function Header() {
                     </div>
                 </div>
 
-             <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4">
+                <Link href={"/user"}>
+           <button aria-label="Wishlist" className="p-2 hover:bg-black/5 rounded-full transition-colors">
+
                     <FiUser className="w-5 h-5 text-white" />
-                    <CiHeart className="w-5 h-5 text-white" />
-                    <FiShoppingCart className="w-5 h-5 text-white" />
+                    </button>
+                    </Link>
+                    <Link href={"/wishlist"}>
+           <button aria-label="Wishlist" className="p-2 hover:bg-black/5 rounded-full transition-colors">
+           <CiHeart className="w-6 h-6" />
+           </button>
+        
+           </Link>
+
+                <Link href={"/cart"}>
+                    <button aria-label="Cart" className="p-2 hover:bg-black/5 rounded-full transition-colors">
+                        <FiShoppingCart className="w-6 h-6" />
+                    </button>
+                </Link>
                     
                 </div>
             </div>
 
+            {/* Navigation Bar */}
             <div className="w-full bg-white flex items-center justify-between px-4 sm:px-8 relative">
-      
                 <div className="text-[#0D0E43] font-[Josefin Sans] font-bold text-xl ml-4">
-                    
+                    {/* Add your logo or brand name here */}
                 </div>
 
-          
+                {/* Mobile Menu Button */}
                 <button
                     className="sm:hidden text-[#7E33E0] text-3xl"
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -51,85 +69,51 @@ export default function Header() {
                     {menuOpen ? "✕" : "☰"}
                 </button>
 
-     
+                {/* Navigation Links */}
                 <div
                     className={`${
                         menuOpen ? "flex" : "hidden"
                     } sm:flex flex-col sm:flex-row absolute sm:static top-[100%] left-0 w-full sm:w-auto bg-white sm:bg-transparent z-10 sm:space-x-6`}
                 >
-                    <Link
-                        href="/"
-                        className="text-[#FB2E86] font-[Lato] text-sm px-4 py-2 sm:px-0"
-                    >
-                        Home
-                    </Link>
-                    
-                    <Link
-                        href="/shop"
-                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
-                    >
-                        Shop
-                    </Link>
-                    <Link
-                        href="/product"
-                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
-                    >
-                        Product
-                    </Link>
-                                      
-                                       <Link
-                        href="/about"
-                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
-                    >
-                        About Us
-                    </Link>
-                                       
-                    <Link
-                        href="/blog"
-                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
-                    >
-                        Blog
-                    </Link>
-                    <Link
-                        href="/faq"
-                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
-                    >
-                        FAQ
-                    </Link>
-                    <Link
-                        href="/contact"
-                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
-                    >
-                        Contact
-                    </Link>
-                    <Link
-                        href="/user"
-                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
-                    >
-                        Login/Register...
-                    </Link>
-                    <Link
-                        href="/cart"
-                        className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
-                    >
-                        Cart
-                    </Link>
-                    
+                    {[
+                        { href: "/", label: "Home" },
+                        { href: "/shop", label: "Shop" },
+                        { href: "/product", label: "Product" },
+                        { href: "/about", label: "About Us" },
+                        { href: "/blog", label: "Blog" },
+                        { href: "/faq", label: "FAQ" },
+                        { href: "/contact", label: "Contact" },
+                        
+                        
+                    ].map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className="text-[#0D0E43] font-[Lato] text-sm px-4 py-2 sm:px-0"
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
                 </div>
 
-         
-                <div className="hidden md:flex items-center mr-4">
+                {/* Search Bar */}
+                <div className="hidden sm:flex md:items-center gap-2 sm:pr-10">
                     <input
-                        type="text"
-                        placeholder="Search"
-                        className="w-[200px] h-[35px] border border-[#ddd] px-4 text-sm rounded-l"
+                        type="search"
+                        value={value}
+                        onChange={(e) => setValue(e.target.value)}
+                        placeholder="Search..."
+                        className="p-2 border border-pink-600 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
                     />
-                    <div className="w-[35px] h-[35px] bg-[#FB2E86] flex items-center justify-center rounded-r">
-                        <CiSearch className="w-5 h-5 text-white" />
-                    </div> 
-                </div>
+                    <button
+                        aria-label="Search"
+                        className="p-2 hover:bg-pink-500 rounded-full transition-colors"
+                    >
+                        <CiSearch className="w-6 h-6" />
+                    </button>
+                    
+                                    </div>
             </div>
-        </div>
+                    </div>
     );
 }
-
