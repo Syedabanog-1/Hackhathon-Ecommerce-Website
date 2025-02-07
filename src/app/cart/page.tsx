@@ -1,11 +1,9 @@
 "use client"
-import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { useCart } from "../components/CartContext";
 import { Heart, Trash2 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useToast } from "../components/Toast";
-//import {ShippingRatesPage }from "../../app/shipment"
 import { useRouter } from "next/navigation";
 
 
