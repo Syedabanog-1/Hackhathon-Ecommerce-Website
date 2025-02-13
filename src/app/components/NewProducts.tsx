@@ -13,16 +13,9 @@ const productData = [
     price: "$300",
   },
   
+  
   {
     key: 2,
-    img: "/BlackAndWhiteMinimalistChair.jpg",
-    title: "SimpleChair",
-    desc: "Comfort Chair",
-    rating: 4.7,
-    price: "$90",
-  },
-  {
-    key: 3,
     img: "/BlackChairWithCushion.jpg",
     title: "Chair with Cusion",
     desc: "Comfort Chair with Cusion",
@@ -30,7 +23,7 @@ const productData = [
     price: "$160",
   },
   {
-    key: 4,
+    key: 3,
     img: "/blackSofaChair.png",
     title: "Comfort Seated  Chair",
     desc: "Stylish Chair",
@@ -38,7 +31,7 @@ const productData = [
     price: "$280",
   },
   {
-    key: 5,
+    key: 4,
     img: "/FancySingleChair.jpg",
     title: "PlainnewLookChair",
     desc: "Black Fancy and Plain  Chair",
@@ -46,7 +39,7 @@ const productData = [
     price: "$150",
   },
   {
-    key: 6,
+    key: 5,
     img: "/GreenSofa.jpg",
     title: "Comfort Green Sofa",
     desc: "Big Comfort Green Sofa",
@@ -54,7 +47,7 @@ const productData = [
     price: "$320",
   },
   {
-    key: 7,
+    key: 6,
     img: "/ModernBlackChair.jpg",
     title: "Simple and plain Chair",
     desc: "Simple and plain Black Chair in new look",
@@ -62,7 +55,7 @@ const productData = [
     price: "$110",
   },
   {
-    key: 8,
+    key: 7,
     img: "/OrangeChair.jpg",
     title: "Bright Orange Chair",
     desc: "Very Stable Orange Chair",
@@ -70,7 +63,7 @@ const productData = [
     price: "$130",
   },
   {
-    key: 9,
+    key: 8,
     img: "/PairOfChairs.png",
     title: "Desk Chair",
     desc: "Stylish Chairs at reasonable price",
@@ -78,23 +71,15 @@ const productData = [
     price: "$270",
   },
   {
-    key: 10,
+    key: 9,
     img: "/PinkUpholsteredChair.jpg",
     title: "Pink Chair",
     desc: "Large Comfort Chair",
     rating: 4.5,
     price: "$280",
   },
-  {
-    key: 11,
-    img: "/POC.jpg",
-    title: "TDesk Chair",
-    desc: "New Moveable Chair",
-    rating: 4.6,
-    price: "$120",
-  },
-  {
-    key: 12,
+   {
+    key: 10,
     img: "/RoundedBeigeChair.jpg",
     title: "Comfort Chair",
     desc: " Chair with Comfort and Moveable seat",
@@ -102,7 +87,7 @@ const productData = [
     price: "$170",
   },
   {
-    key: 13,
+    key: 11,
     img: "/RoundShortLegStoolChair.jpg",
     title: "Fancy Stool",
     desc: "Amazing product Very Fancy",
@@ -110,16 +95,9 @@ const productData = [
     price: "$150",
   },
   
+  
   {
-    key: 15,
-    img: "/TableAndStoolSet.jpg",
-    title: "Stool sitter",
-    desc: "Bestselelr product",
-    rating: 4.4,
-    price: "$80",
-  },
-  {
-    key: 16,
+    key: 12,
     img: "/TASS.png",
     title: "Stool chair",
     desc: "Bestseller  product keeps less space area",
@@ -127,7 +105,7 @@ const productData = [
     price: "$180",
   },
   {
-    key: 17,
+    key: 13,
     img: "/upholsteredChair.jpg",
     title: "Grey Chair",
     desc: "Big Comfort Chair",
@@ -135,7 +113,7 @@ const productData = [
     price: "$140",
   },
   {
-    key: 18,
+    key: 14,
     img: "/whiteChair.jpg",
     title: "SimpleChair",
     desc: "Medium Chair keeps less space area",
@@ -143,7 +121,7 @@ const productData = [
     price: "$70",
   },
   {
-    key: 19,
+    key: 15,
     img: "/WoodenRockingChair.jpg",
     title: "Swing Chair",
     desc: "Big Rester Chair",

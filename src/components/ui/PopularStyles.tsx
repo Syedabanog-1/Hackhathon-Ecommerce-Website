@@ -44,7 +44,7 @@ const PopularStyles = () => {
             "/CreamTuftedChair.jpg",
             "/whiteChair.jpg",
             "/upholsteredChair.jpg",
-            "/TASS.png",
+            "/BlackAndWhiteMinimalistChair.jpg",
           ].map((imageSrc, index) => (
             <div
               key={index}

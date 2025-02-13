@@ -116,11 +116,27 @@ const AllProductpage = () => {
       name: "Dual-Toned Office Chairs",
       description: "Stylish office chairs available in pink and black, adding a chic look to workspaces.",
       price: 50
-    }
+    },
+    {
+      id: 12,
+      src: "/blackSofaChair.png",
+      name: "Comfort Seated  Chair",
+      description: "Stylish Chair",
+      price: 140
+    },
+    {
+      id: 13,
+      src: "/GreenSofa.jpg",
+      name: "Comfort Green Sofa",
+      description: "Big Comfort Green Sofa",
+      price: 280
+      
+    },
   ];
 
+
   const featuredProducts = [
-    { src: "/upholsteredChair.jpg" },
+    { src: "/PairOfChairs.png" },
     { src: "/RoundedBeigeChair.jpg" },
     { src: "/PinkUpholsteredChair.jpg" },
     { src: "/whiteChair.jpg" },
@@ -147,8 +163,7 @@ const AllProductpage = () => {
         <h1 className="font-inter text-2xl sm:text-3xl md:text-4xl leading-tight font-semibold mt-8 text-[#272343] text-center lg:text-left lg:pl-4">
           All Products
         </h1>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => (
             <div key={product.id} className="w-full">
               <div className="product-card bg-white rounded-lg p-4 h-full flex flex-col">
