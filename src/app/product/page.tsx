@@ -112,31 +112,40 @@ const AllProductpage = () => {
     },
     {
       id: 11,
-      src: "/POC.jpg",
+      src: "/PairOfChairs.png",
       name: "Dual-Toned Office Chairs",
       description: "Stylish office chairs available in pink and black, adding a chic look to workspaces.",
       price: 50
     },
+    
     {
       id: 12,
-      src: "/blackSofaChair.png",
-      name: "Comfort Seated  Chair",
-      description: "Stylish Chair",
-      price: 140
-    },
-    {
-      id: 13,
       src: "/GreenSofa.jpg",
       name: "Comfort Green Sofa",
       description: "Big Comfort Green Sofa",
       price: 280
       
     },
+    {
+      id: 13,
+      src: "/red.jpeg",
+      name: "Comfort Chair",
+      description: "Stylish Chair",
+      price: 140
+    },
+    {
+      id: 14,
+      src: "/sofa.jpeg",
+      name: "Comfort Seated  sofa",
+      description: "Stylish sofa",
+      price: 200,
+    }, 
+      
   ];
 
 
   const featuredProducts = [
-    { src: "/PairOfChairs.png" },
+    
     { src: "/RoundedBeigeChair.jpg" },
     { src: "/PinkUpholsteredChair.jpg" },
     { src: "/whiteChair.jpg" },

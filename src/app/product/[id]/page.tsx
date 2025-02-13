@@ -201,7 +201,7 @@ const products: Product[] = [
     },
     {
       id: 11,
-      src: "/POC.jpg",
+      src: "/PairOfChairs.png",
       name: "Dual-Toned Office Chairs",
       description: "Stylish office chairs available in pink and black, adding a chic look to workspaces.",
       price: 50,
@@ -212,7 +212,53 @@ const products: Product[] = [
         Dimensions: "30 x 20 x 20 inches",
         "Assembly Required": "No",
       },
+    
     },
+    
+    {
+      id: 12,
+      src: "/GreenSofa.jpg",
+      name: "Comfort Green Sofa",
+      description: "Big Comfort Green Sofa",
+      price: 280,
+      features: ["Green color", "Comfortable seating", "Durable for daily use"],
+      specifications: {
+        Material: "Metal and Leather and Wood",
+        "Weight Capacity": "600 lbs",
+        Dimensions: "80 x 70 x 70 inches",
+        "Assembly Required": "No",  
+    },
+  },
+  {
+    id: 13,
+    src: "/red.jpeg",
+    name: "Comfort Chair",
+    description: "Stylish Chair",
+    price: 140,
+    features: ["Red color", "Comfortable with Arms", "Durable for daily use"],
+    specifications: {
+      Material: "Thick Plastic",
+      "Weight Capacity": "200 lbs",
+      Dimensions: "30 x 20 x 20 inches",
+      "Assembly Required": "No"
+
+  },
+},
+{
+  id: 14,
+  src: "/sofa.jpeg",
+  name: "Comfort Seated  sofa",
+  description: "Stylish sofa",
+  price: 200,
+  features: ["DrakGreen color", "Comfortable seating", "Durable for daily use"],
+  specifications: {
+    Material: "Leather And Wood",
+    "Weight Capacity": "450 lbs",
+    Dimensions: "35 x 25 x 25 inches",
+    "Assembly Required": "No"
+
+},
+},
   ];
   
   // Find the product with the matching id
@@ -261,7 +307,8 @@ const products: Product[] = [
               alt={product.name}
               fill
               className="object-cover rounded-lg"
-              sizes="(max-width: 768px) 100vw, 50vw"
+        
+              sizes="(max-width: 768px) 100vw, 50vw" 
               priority
             />
           </div>
