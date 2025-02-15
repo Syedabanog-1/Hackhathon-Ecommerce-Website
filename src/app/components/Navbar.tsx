@@ -82,6 +82,7 @@ export default function Header() {
                         { href: "/", label: "Home" },
                         { href: "/shop", label: "Shop" },
                         { href: "/product", label: "Product" },
+                        { href: "/dashboard", label: "Dashboard" },
                         { href: "/about", label: "About Us" },
                         { href: "/blog", label: "Blog" },
                         { href: "/faq", label: "FAQ" },

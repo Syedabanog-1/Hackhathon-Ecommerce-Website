@@ -140,6 +140,13 @@ const AllProductpage = () => {
       description: "Stylish sofa",
       price: 200,
     }, 
+    {
+      id: 15,
+      src: "/tablewith4chairs.jpeg",
+      name: "Round table with 4 large chairs",
+      description: "",
+      price: 1200,
+    },    
       
   ];
 

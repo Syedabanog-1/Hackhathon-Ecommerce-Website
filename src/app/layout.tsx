@@ -7,12 +7,15 @@ import HeaderTop from './components/HeaderTop';
 import HeaderMin from './components/HeaderMin';
 import { CartProvider } from './components/CartContext';
 import { ToastProvider } from './components/Toast';
+import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
   variable: '--font-geist-sans',
   weight: '100 900',
 });
+
 const geistMono = localFont({
   src: './fonts/GeistMonoVF.woff',
   variable: '--font-geist-mono',
@@ -26,17 +29,25 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <CartProvider> 
-          <ToastProvider> 
-            <HeaderTop />
-            <HeaderMin />
-            {children}
-            <Footer />
-          </ToastProvider>
-        </CartProvider>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          <CartProvider>
+            <ToastProvider>
+              <HeaderTop />
+              <HeaderMin />
+              <SignedOut>
+                <SignInButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+              {children}
+              <Footer />
+            </ToastProvider>
+          </CartProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

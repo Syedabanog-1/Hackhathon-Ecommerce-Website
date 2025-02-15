@@ -259,6 +259,114 @@ const products: Product[] = [
 
 },
 },
+{
+  id: 14,
+  src: "/sofa.jpeg",
+  name: "Comfort Seated  sofa",
+  description: "Stylish sofa",
+  price: 200,
+  features: ["DrakGreen color", "Comfortable seating", "Durable for daily use"],
+  specifications: {
+    Material: "Leather And Wood",
+    "Weight Capacity": "450 lbs",
+    Dimensions: "35 x 25 x 25 inches",
+    "Assembly Required": "No"
+
+},
+},
+{
+  id: 14,
+  src: "/sofa.jpeg",
+  name: "Comfort Seated  sofa",
+  description: "Stylish sofa",
+  price: 200,
+  features: ["DrakGreen color", "Comfortable seating", "Durable for daily use"],
+  specifications: {
+    Material: "Leather And Wood",
+    "Weight Capacity": "450 lbs",
+    Dimensions: "35 x 25 x 25 inches",
+    "Assembly Required": "No"
+
+},
+},
+{
+  id: 14,
+  src: "/sofa.jpeg",
+  name: "Comfort Seated  sofa",
+  description: "Stylish sofa",
+  price: 200,
+  features: ["DrakGreen color", "Comfortable seating", "Durable for daily use"],
+  specifications: {
+    Material: "Leather And Wood",
+    "Weight Capacity": "450 lbs",
+    Dimensions: "35 x 25 x 25 inches",
+    "Assembly Required": "No"
+
+},
+},
+{
+  id: 14,
+  src: "/sofa.jpeg",
+  name: "Comfort Seated  sofa",
+  description: "Stylish sofa",
+  price: 200,
+  features: ["DrakGreen color", "Comfortable seating", "Durable for daily use"],
+  specifications: {
+    Material: "Leather And Wood",
+    "Weight Capacity": "450 lbs",
+    Dimensions: "35 x 25 x 25 inches",
+    "Assembly Required": "No"
+
+},
+},
+{
+  id: 14,
+  src: "/sofa.jpeg",
+  name: "Comfort Seated  sofa",
+  description: "Stylish sofa",
+  price: 200,
+  features: ["DrakGreen color", "Comfortable seating", "Durable for daily use"],
+  specifications: {
+    Material: "Leather And Wood",
+    "Weight Capacity": "450 lbs",
+    Dimensions: "35 x 25 x 25 inches",
+    "Assembly Required": "No"
+
+},
+},
+{
+  id: 14,
+  src: "/sofa.jpeg",
+  name: "Comfort Seated  sofa",
+  description: "Stylish sofa",
+  price: 200,
+  features: ["DrakGreen color", "Comfortable seating", "Durable for daily use"],
+  specifications: {
+    Material: "Leather And Wood",
+    "Weight Capacity": "450 lbs",
+    Dimensions: "35 x 25 x 25 inches",
+    "Assembly Required": "No"
+
+},
+},
+{
+  id: 15,
+  src: "/tablewith4chairs.jpeg",
+  name: "Round table with 4 large chairs",
+  description: "",
+  price: 1200,
+  features: ["Brown color", "wooden tabel and chairs", " outside use"],
+  specifications: {
+    Material: "Wood",
+    "Weight Capacity": "450 lbs",
+    Dimensions: "70 x 60 x 60 inches",
+    "Assembly Required": "No"
+
+},
+},
+
+
+
   ];
   
   // Find the product with the matching id
