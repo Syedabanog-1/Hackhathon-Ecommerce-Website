@@ -1,11 +1,13 @@
-import LayoutWrapper from '@/components/layoutWrapper';
+
 import StatisticsCharts from '@/components/statistics-chatrs';
+import { AdminHeader } from '@/components/AdminHeader';
+import { AdminSidebar } from '@/components/AdminSidsebar';
+
  export default  function Dashboard() {
     return (
         <div>
-            <LayoutWrapper>
-                Dashboard
-            </LayoutWrapper>
+            <AdminHeader />
+            <AdminSidebar />
             <StatisticsCharts />
         </div>
     )
