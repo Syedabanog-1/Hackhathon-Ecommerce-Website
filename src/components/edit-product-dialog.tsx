@@ -32,7 +32,7 @@ interface EditProductDialogProps {
   categoryDropdown: string[];
 }
 
-export function EditProductDialog({
+export default function EditProductDialog({
   product: initialProduct,
   open,
   onOpenChange,

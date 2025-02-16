@@ -3,6 +3,9 @@
 
 import { client } from "@/sanity/lib/client";
 
+
+
+
 export interface ICard {
   productImage: string;
   colors: string;
@@ -84,6 +87,7 @@ export interface IReturnSanityProduct {
 
 //-----------------------------------------------product Update Sanity
 export async function productPostSanity(updatedProduct: ICard) {
+  
   try {
     if (!updatedProduct._id) throw new Error("Product ID is missing!");
 
