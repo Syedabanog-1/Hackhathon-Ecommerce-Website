@@ -28,8 +28,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <>
+  return (<>
       <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <CartProvider>
@@ -43,6 +42,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </CartProvider>
         </body>
       </html>
+      </>
+      )
+      };
     
     {/*<ClerkProvider>
       <html lang="en">
@@ -64,6 +66,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </body>
       </html>
     </ClerkProvider> */}
-  </>
-  );
-}
+ 
