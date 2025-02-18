@@ -1,8 +1,28 @@
-import React from "react";
+'use client';
+
+import React, { useState } from "react";
 import Link from "next/link";
 
+const Footer: React.FC = () => {
+  const [email, setEmail] = useState<string>("");
+  const [buttonText, setButtonText] = useState<string>("Subscribe");
+  const [buttonColor, setButtonColor] = useState<string>("bg-red-500 hover:bg-red-600");
 
-const Footer = () => {
+  const handleSubscribe = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (email.trim() === "") return; // Prevent empty submission
+
+    setButtonText("Subscribed ✔"); // Change button text
+    setButtonColor("bg-green-500 hover:bg-green-600"); // Change button color to green
+    setEmail(""); // Clear input field
+
+    // Reset button text & color after 2 seconds
+    setTimeout(() => {
+      setButtonText("Subscribe");
+      setButtonColor("bg-red-500 hover:bg-red-600"); // Revert button color to red
+    }, 2000);
+  };
+
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +31,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">About Us</h3>
             <p className="text-gray-400">
-              We are a leading eCommerce store providing high-quality Furniture products
+              We are a leading eCommerce store providing high-quality furniture products
               at affordable prices. Our mission is to offer the best experience to our 
               customers.
             </p>
@@ -27,24 +47,24 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <Link href="/contact" className="text-gray-400 hover:text-white">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <Link href="/faqs" className="text-gray-400 hover:text-white">
                   FAQs
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <Link href="/shipping-returns" className="text-gray-400 hover:text-white">
                   Shipping & Returns
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <Link href="/privacy-policy" className="text-gray-400 hover:text-white">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -54,36 +74,45 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Follow Us</h3>
             <ul className="space-y-2">
               <li>
-                <a 
-                  href="https://www.facebook.com/profile.php?id=100090843034764" 
+                <a
+                  href="https://www.facebook.com/profile.php?id=100090843034764"
                   className="text-gray-400 hover:text-white"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Facebook"
                 >
                   Facebook
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a
+                  href="https://twitter.com"
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
                   Twitter
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://github.com/Syedabanog-1" 
+                <a
+                  href="https://github.com/Syedabanog-1"
                   className="text-gray-400 hover:text-white"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="GitHub"
                 >
                   GitHub
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://www.linkedin.com/in/gulzar-bano-syeda-b3b7b1230" 
+                <a
+                  href="https://www.linkedin.com/in/gulzar-bano-syeda-b3b7b1230"
                   className="text-gray-400 hover:text-white"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                 >
                   LinkedIn
                 </a>
@@ -97,14 +126,20 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               Subscribe to our newsletter for the latest updates and offers.
             </p>
-            <form>
+            <form onSubmit={handleSubscribe}>
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full p-2 mb-4 rounded bg-gray-700 text-gray-200 focus:outline-none"
                 placeholder="Enter your email"
+                required
               />
-              <button className="w-full p-2 rounded bg-red-500 hover:bg-red-600 text-white">
-                Subscribe
+              <button
+                type="submit"
+                className={`w-full p-2 rounded text-white transition-all ${buttonColor}`}
+              >
+                {buttonText}
               </button>
             </form>
           </div>
@@ -116,10 +151,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Your Store. All rights reserved.
           </p>
         </div>
-          
-
       </div>
-      
     </footer>
   );
 };

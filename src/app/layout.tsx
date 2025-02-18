@@ -7,7 +7,7 @@ import HeaderTop from './components/HeaderTop';
 import HeaderMin from './components/HeaderMin';
 import { CartProvider } from './components/CartContext';
 import { ToastProvider } from './components/Toast';
-import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+//import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 
 
 const geistSans = localFont({
@@ -29,7 +29,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider>
+    <>
+      <html lang="en">
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          <CartProvider>
+            <ToastProvider>
+              <HeaderTop />
+              <HeaderMin />
+          
+              {children}
+              <Footer />
+            </ToastProvider>
+          </CartProvider>
+        </body>
+      </html>
+    
+    {/*<ClerkProvider>
       <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <CartProvider>
@@ -48,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </CartProvider>
         </body>
       </html>
-    </ClerkProvider>
+    </ClerkProvider> */}
+  </>
   );
 }

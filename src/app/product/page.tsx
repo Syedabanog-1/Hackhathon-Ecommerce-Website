@@ -1,10 +1,11 @@
-"use client"
+  "use client"
 
 import Image from "next/image"
 import Link from "next/link"
 import { ShoppingCart } from "lucide-react"
 import { useCart } from "../components/CartContext"
 import { useToast } from "../components/Toast"
+import { useState } from "react"
 
 // Define product type
 type Product = {
@@ -20,6 +21,9 @@ type Product = {
 const AllProductpage = () => {
   const { addItem } = useCart()
   const { showToast } = useToast()
+  const [email, setEmail] = useState("")
+  const [subscribed, setSubscribed] = useState(false)
+
 
   const products: Product[] = [
     {
@@ -152,7 +156,6 @@ const AllProductpage = () => {
 
 
   const featuredProducts = [
-    
     { src: "/RoundedBeigeChair.jpg" },
     { src: "/PinkUpholsteredChair.jpg" },
     { src: "/whiteChair.jpg" },
@@ -179,7 +182,7 @@ const AllProductpage = () => {
         <h1 className="font-inter text-2xl sm:text-3xl md:text-4xl leading-tight font-semibold mt-8 text-[#272343] text-center lg:text-left lg:pl-4">
           All Products
         </h1>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => (
             <div key={product.id} className="w-full">
               <div className="product-card bg-white rounded-lg p-4 h-full flex flex-col">
@@ -227,50 +230,8 @@ const AllProductpage = () => {
           ))}
         </div>
       </div>
-
-      <div className="max-w-full bg-[#F7F7F7] overflow-hidden mt-14">
-        <div className="max-w-7xl mx-auto flex flex-col items-center gap-10 px-4 sm:px-6 lg:px-8">
-          <h1 className="font-roboto font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight text-[#000000] pt-6 sm:pt-10 text-center">
-            Or Subscribe To The Newsletter
-          </h1>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 justify-between items-center w-full max-w-[643px]">
-            <div className="flex flex-col w-full sm:w-[80%]">
-              <p className="font-roboto font-semibold text-sm text-[#1E283280]">Email address...</p>
-              <div className="w-full h-[2px] bg-[#000000]" />
-            </div>
-            <button className="font-sans font-normal text-sm text-[#1E2832] border-b-2 border-[#000000] cursor-pointer whitespace-nowrap">
-              SUBMIT
-            </button>
-          </div>
-          <div className="flex flex-col items-center w-full">
-            <h1 className="font-roboto font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight text-[#000000] pt-6 sm:pt-10 text-center">
-              Follow products and discounts on Instagram
-            </h1>
-            <div className="my-6 w-full">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 max-w-7xl mx-auto">
-                {featuredProducts.map((product, index) => (
-                  <div key={index} className="relative aspect-square w-full">
-                    <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={product.src || "/placeholder.svg"}
-                          alt={`instagram-product-${index}`}
-                          fill
-                          className="object-cover rounded-lg"
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 16.666vw"
-                        />
-                      </div>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   )
 }
 
 export default AllProductpage
-
