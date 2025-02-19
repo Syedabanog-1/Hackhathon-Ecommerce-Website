@@ -5,7 +5,7 @@ const sanityClient = createClient({
   dataset: "production",  // Dataset ka naam (e.g., 'production')
   useCdn: true, // Fast caching ke liye true karein
   apiVersion: "2023-01-01", // Latest API version daalain
-  token: "sk238kWAA870Q49tEQ3iXMpeqoHMZyOqHuyMXqZLW6fQ42IGpYMqZXcNFl3kU6ZaC2F4miFr4UAz7dghxr2h5u1Syk25CzyYjNdXB2q4AeFnZ0CGdtGVA4n8iHFLR8lhFlhtRYdFGdAFh5AM6GgKVQ92uVnvXTEeGWNkKuaC9c9jlh60Pi5m",
+  token: "skwhGbsijlUHMM1MvQ9O0ny5IjvVqlUqCOiGhRzFOIwvzBfhPh3KSuoNXiZhdSToOMwd88fVYETvvU8ITC7hOGLcRLbGis46JfEwlqT4Pt3J6uBWjN4o1rc3OV45IXyUlj2YWQiCpj2LBTZS838k1Rzmcehcp1BCFSulbLUTAdRq5qkpas58",
 });
 
 export default sanityClient;
