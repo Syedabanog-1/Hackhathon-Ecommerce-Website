@@ -8,7 +8,7 @@ import { createClient } from "@sanity/client";
 const {
   NEXT_PUBLIC_SANITY_PROJECT_ID = "16cig573", // Sanity project ID
   NEXT_PUBLIC_SANITY_DATASET= "production", // Sanity dataset (e.g., "production")
-  NEXT_PUBLIC_SANITY_AUTH_TOKEN = "skwhGbsijlUHMM1MvQ9O0ny5IjvVqlUqCOiGhRzFOIwvzBfhPh3KSuoNXiZhdSToOMwd88fVYETvvU8ITC7hOGLcRLbGis46JfEwlqT4Pt3J6uBWjN4o1rc3OV45IXyUlj2YWQiCpj2LBTZS838k1Rzmcehcp1BCFSulbLUTAdRq5qkpas58",//Token 
+  NEXT_PUBLIC_SANITY_AUTH_TOKEN = "sk238kWAA870Q49tEQ3iXMpeqoHMZyOqHuyMXqZLW6fQ42IGpYMqZXcNFl3kU6ZaC2F4miFr4UAz7dghxr2h5u1Syk25CzyYjNdXB2q4AeFnZ0CGdtGVA4n8iHFLR8lhFlhtRYdFGdAFh5AM6GgKVQ92uVnvXTEeGWNkKuaC9c9jlh60Pi5m",//Token 
   BASE_URL = "https://giaic-hackathon-template-08.vercel.app", // API base URL for products and categories
 } = process.env;
 
@@ -24,7 +24,7 @@ const targetClient = createClient({
   dataset: NEXT_PUBLIC_SANITY_DATASET || "production", // Default to "production" if not set
   useCdn: false, // Disable CDN for real-time updates
   apiVersion: "2023-01-01", // Sanity API version
- token: NEXT_PUBLIC_SANITY_AUTH_TOKEN || "skwhGbsijlUHMM1MvQ9O0ny5IjvVqlUqCOiGhRzFOIwvzBfhPh3KSuoNXiZhdSToOMwd88fVYETvvU8ITC7hOGLcRLbGis46JfEwlqT4Pt3J6uBWjN4o1rc3OV45IXyUlj2YWQiCpj2LBTZS838k1Rzmcehcp1BCFSulbLUTAdRq5qkpas58",//API TOKEN FOR AUTHENTICATION
+ token: NEXT_PUBLIC_SANITY_AUTH_TOKEN || "sk238kWAA870Q49tEQ3iXMpeqoHMZyOqHuyMXqZLW6fQ42IGpYMqZXcNFl3kU6ZaC2F4miFr4UAz7dghxr2h5u1Syk25CzyYjNdXB2q4AeFnZ0CGdtGVA4n8iHFLR8lhFlhtRYdFGdAFh5AM6GgKVQ92uVnvXTEeGWNkKuaC9c9jlh60Pi5m",//API TOKEN FOR AUTHENTICATION
    
 });
  
